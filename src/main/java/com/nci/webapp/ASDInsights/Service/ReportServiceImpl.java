@@ -2,6 +2,9 @@ package com.nci.webapp.ASDInsights.Service;
 
 import com.nci.webapp.ASDInsights.Model.Report;
 import com.nci.webapp.ASDInsights.Repository.ReportRepository;
+
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +19,7 @@ public class ReportServiceImpl implements ReportService{
     }
 
     @Override
-    public boolean checkDate(Integer date) {
+    public boolean checkDate(Date date) {
         return reportRepo.existsByDate(date);
     }
 }

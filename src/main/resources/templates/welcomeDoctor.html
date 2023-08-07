@@ -38,54 +38,19 @@
 		      <div class="d-flex align-items-center">
 		        <span class="service-icon rounded-circle mx-auto mb-3 text-left">
 		          <img width="71,5" height="71,5" src="assets/icon.jpg"></span>
-		        <span class="ml-2 custom-text">Login</span>
+		        <span class="ml-2 custom-text">Hello, <span th:text="${username}"></span></span>
 		      </div>
 		    </div>
 		</header>
 
         <!-- Form Login -->
-        <div class="container mt-5">
+        <div class="container mt-5 p-5">
 		        <div class="row">
-				    </div>
-				    <div class="card-header mb-3">
-				        <div class="card-body">
-
-
-				            <form
-				                    method="post"
-				                    action="login"
-				                    class="form-horizontal"
-				                    role="form"
-									th:object="${userDtls}"
-				            >
-				                <div class="mb-3">
-				                    <label for="username" class="control-label">Username *</label>
-				                    <input type="email"
-				                           id="email"
-				                           name="email"
-				                           class="form-control"
-				                           placeholder="Username"
-				                    />
-				                </div>
-
-				                <div class="mb-3">
-				                    <label for="password" class="control-label">Password *</label>
-				                    <input type="password"
-				                           id="password"
-				                           name="password"
-				                           class="form-control"
-				                           placeholder="Password"
-				                    />
-				                </div>
-
-				                <div class="mb-3">
-				                    <button type="submit" class="btn btn-primary">Login</button>
-				                    <span> Not registered? <a href="register.html"> Register Here</a> </span>
-				                </div>
-				            </form>
-				        </div>
-				    </div>
-
+					<div class="d-grid justify-content-center p-5 mb-5">
+						<h2 class="">Welcome to ASD APP</h2>
+						<a th:href="@{/dash}" class="btn btn-success mt-4 mb-5">Click here to access Dashboard</a>
+					</div>
+				</div>
 </div>
 
 

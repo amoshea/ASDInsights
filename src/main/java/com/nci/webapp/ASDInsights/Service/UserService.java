@@ -9,4 +9,7 @@ public interface UserService {
     public UserDtls createUser(UserDtls user);
 
     public boolean checkUsername(String username);
+
+    public UserDtls loginUser(String email, String password);
+    
 }

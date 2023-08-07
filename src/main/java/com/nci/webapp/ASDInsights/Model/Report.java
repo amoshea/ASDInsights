@@ -1,5 +1,9 @@
 package com.nci.webapp.ASDInsights.Model;
 
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,7 +17,8 @@ public class Report {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
-    private int date;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date date;
     private String name;
     private int DayRating;
     private int socialInteraction;

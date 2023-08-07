@@ -11,6 +11,7 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepo;
+    
     @Override
     public UserDtls createUser(UserDtls user) {
         return userRepo.save(user);
@@ -20,4 +21,12 @@ public class UserServiceImpl implements UserService {
     public boolean checkUsername(String username) {
         return userRepo.existsByUsername(username);
     }
+
+    @Override
+    public UserDtls loginUser(String email, String password) {
+        UserDtls user = this.userRepo.buscarLogin(email, password);
+        return user;
+    }
+
+  
 }

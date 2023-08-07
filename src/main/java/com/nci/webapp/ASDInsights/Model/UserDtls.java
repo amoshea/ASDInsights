@@ -4,10 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserDtls {
 
     @Id
@@ -18,6 +22,6 @@ public class UserDtls {
     private String LName;
     private String userProfile;
     private String email;
-    private int password;
+    private String password;
 
 }

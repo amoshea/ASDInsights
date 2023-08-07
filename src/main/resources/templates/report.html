@@ -80,7 +80,7 @@
 
 			<br>
 
-			<form action="recordData"  method="post">
+			<form th:action="@{/reportData}"  method="post">
 		            <div class="form-group">
 					    <div class="row">
 					        <div class="col-md-6">
@@ -134,7 +134,9 @@
 							        <td>0</td>
 							    </tr>
 							    <tr>
-							        <input type="range" name="socialInteraction" class="range-slider" min="0" max="5" step="1" id="behaviourSocialInteraction" name="behaviour[SocialInteraction]" value="0">
+							        <input type="range" name="socialInteraction" class="range-slider"
+									 min="0" max="5" step="1" id="behaviourSocialInteraction" 
+								value="0">
 							    </tr>
 							    <span id="slider-value"></span>
 							</div>
@@ -149,7 +151,8 @@
 							        <td>0</td>
 							    </tr>
 							    <tr>
-							        <input type="range" name="anxiety" class="range-slider" min="0" max="5" step="1" id="behaviourAnxiety" name="behaviour[Anxiety]" value="0">
+							        <input type="range" name="anxiety" class="range-slider" 
+									min="0" max="5" step="1" id="behaviourAnxiety" value="0">
 							    </tr>
 							    <span id="slider-value-anxiety"></span>
 							</div>
@@ -163,7 +166,8 @@
 							        <td>0</td>
 							    </tr>
 							    <tr>
-							        <input type="range" name="pleasant" class="range-slider" min="0" max="5" step="1" id="behaviourPleasant" name="behaviour[Pleasant]" value="0">
+							        <input type="range" name="pleasant" class="range-slider" min="0"
+									 max="5" step="1" id="behaviourPleasant" value="0">
 							    </tr>
 							    <span id="slider-value-pleasant"></span>
 							 </div>
@@ -177,7 +181,8 @@
 							         <td>0</td>
 							     </tr>
 							     <tr>
-							         <input type="range" name="impatience" class="range-slider" min="0" max="5" step="1" id="behaviourImpatience" name="behaviour[Impatience]" value="0">
+							         <input type="range" name="impatience" class="range-slider"
+									  min="0" max="5" step="1" id="behaviourImpatience" value="0">
 							     </tr>
 							     <span id="slider-value-impatience"></span>
 							 </div>
@@ -191,7 +196,8 @@
 							         <td>0</td>
 							     </tr>
 							     <tr>
-							         <input type="range" name="aggressiveness" class="range-slider" min="0" max="5" step="1" id="behaviourAggressiveness" name="behaviour[Aggressiveness]" value="0">
+							         <input type="range" name="aggressiveness" class="range-slider" 
+									 min="0" max="5" step="1" id="behaviourAggressiveness"  value="0">
 							     </tr>
 							     <span id="slider-value-aggressiveness"></span>
 							</div>
@@ -205,7 +211,8 @@
 							        <td>0</td>
 							    </tr>
 							    <tr>
-							        <input type="range" name="friendliness" class="range-slider" min="0" max="5" step="1" id="behaviourFriendliness" name="behaviour[Friendliness]" value="0">
+							        <input type="range" name="friendliness" class="range-slider"
+									 min="0" max="5" step="1" id="behaviourFriendliness"  value="0">
 							    </tr>
 							    <span id="slider-value-friendliness"></span>
 						</div>
@@ -219,7 +226,8 @@
 						        <td>0</td>
 						    </tr>
 						    <tr>
-						        <input type="range" name="communication" class="range-slider" min="0" max="5" step="1" id="behaviourCommunication" name="behaviour[Communication]" value="0">
+						        <input type="range" name="communication" class="range-slider" 
+								min="0" max="5" step="1" id="behaviourCommunication" value="0">
 						    </tr>
 						    <span id="slider-value-communication"></span>
 						</div>
@@ -233,7 +241,8 @@
 						        <td>0</td>
 						    </tr>
 						    <tr>
-						        <input type="range" name="concentration" class="range-slider" min="0" max="5" step="1" id="behaviourConcentration" name="behaviour[Concentration]" value="0">
+						        <input type="range" name="concentration" class="range-slider"
+								 min="0" max="5" step="1" id="behaviourConcentration" value="0">
 						    </tr>
 						    <span id="slider-value-concentration"></span>
 						</div>
